@@ -1,0 +1,16 @@
+{% extends 'layouts/default.njk' %}
+
+{% block body %}
+    <div class="auth-wrapper">
+      <form method="POST" action="/authenticate" class="form-signin">
+        <h1>Fazer login</h1>
+
+        <input type="email" name="email" placeholder="Digite seu email">
+        <input type="password" name="password" placeholder="Digite sua senha">
+
+        <button type="submit">Entrar</button>
+
+        <a href="/signup">Criar conta grátis</a>
+      </form>
+    </div>
+{% endblock %}
